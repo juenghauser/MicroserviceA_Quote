@@ -40,7 +40,7 @@ print(res2.json())
 res3 = requests.get("http://localhost:7005/quotes")
 print(res3.json())
 
----
+```
 
 ## How to Receive Data from this Microservice
 
