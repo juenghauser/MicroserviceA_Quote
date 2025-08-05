@@ -74,4 +74,4 @@ Example: Author Not Found
   "message": "No quotes found for author: Unknown Author"
 }
 
-![UML Sequence Diagram](uml_sequence.png)
+![UML Sequence Diagram](umlQuotes.png)
