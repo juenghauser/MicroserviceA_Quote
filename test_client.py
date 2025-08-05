@@ -17,14 +17,14 @@ def test_author_quote(author):
         print(f"Random Quote by {author}:")
         print_json(res.json())
     else:
-        print(f"Error: {res.json()['message']}")
+        print(f"Quote Request Error:")
+        print_json(res.json())
 
 def test_all_quotes():
     res = requests.get(f"{BASE_URL}/quotes")
     data = res.json()
     print(f"All Quotes ({len(data)} total):")
-    for q in data:
-        print("-", f"{q['quote']} — {q['author']}")
+    print_json(res.json())
 
 if __name__ == "__main__":
     test_random_quote()
